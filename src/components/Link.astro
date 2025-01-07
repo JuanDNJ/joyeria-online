@@ -1,0 +1,61 @@
+---
+import Flex from "./Flex.astro";
+
+const { to, label, className } = Astro.props;
+---
+
+<a href={to} class={className}>
+     <slot name="icon" /> {label}
+</a>
+
+<style>
+    a {
+        box-sizing: border-box;
+        color: var(--maroon-color);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        width: 100%; 
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link:hover {
+        text-decoration: none;
+        background: var(--gray-color);
+    }
+    .badget-admin{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 24rem;
+       
+    }
+    .badget-admin:hover {
+        background: #0070f3;
+        text-decoration: none;
+    }
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 10;
+    }
+    .absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 10;
+    }
+</style>

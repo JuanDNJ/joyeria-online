@@ -1,0 +1,16 @@
+---
+const props = Astro.props;
+---
+
+<section style={
+    {
+        display: 'grid',
+        gridTemplateColumns: props.columns ? `repeat(${props.columns}, 1fr)` : 'repeat(1, 1fr)',
+        gap: props.gap ? props.gap : '1rem',
+        background: props.bg ? props.bg : 'transparent',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    }
+}>
+    <slot />
+</section>

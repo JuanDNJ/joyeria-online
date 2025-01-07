@@ -1,0 +1,25 @@
+---
+const props = Astro.props;
+---
+<article style={{
+    flexGrow: props.flexGrow ? props.flexGrow : 'initial',
+    flexBasis: props.flexBasis ? props.flexBasis : 'auto',
+    gridColumn: props.col ? `span ${props.col}` : 'span 1',
+    gridRow: props.row ? `span ${props.row}` : 'span 1',
+    flex: props.flex ? props.flex : 'initial',
+    order: props.order ? props.order : 'initial',
+    background: props.bg ? props.bg : 'transparent',
+    padding: props.padding ? props.padding : '1rem',
+    margin: props.margin ? props.margin : '0',
+    borderRadius: props.radius ? props.radius : '0',
+    boxShadow: props.shadow ? props.shadow : 'none',
+    border: props.border ? props.border : 'none',
+    display: props.display ? props.display : 'block',
+    justifyContent: props.justify ? props.justify : 'initial',
+    alignItems: props.align ? props.align : 'initial',
+    gap: props.gap ? props.gap : '1rem',
+    width: props.width ? props.width : 'auto',
+    height: props.height ? props.height : 'auto'
+}}>
+    <slot />
+</article>

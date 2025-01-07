@@ -1,0 +1,71 @@
+---
+import Link from "./Link.astro";
+import user from "../assets/user.svg";
+const { props} = Astro.props;
+
+const linksNavigation = [
+	{ href: "#pres", text: "Presentación" },
+	{ href: "#app", text: "APP" },
+	{ href: "#marcas", text: "Marcas" },
+	{ href: "#contacto", text: "Contacto" },
+	{ href: "#catalogo", text: "Catálogo" },
+];
+---
+
+<nav>
+    <div class="desktop">
+        {
+            linksNavigation.map((link: any) => (
+                <Link to={link.href} label={link.text} className={`link`} />
+            ))
+            
+        }
+        <Link
+        to={`/admin`}
+        label={`Administracón`}
+        className={`badget-admin`}
+    >
+        <span slot="icon">
+            <img src={user.src} width="24" alt="" />
+        </span>
+    </Link>
+    </div>
+    <button class="menuMobile">
+        <svg
+            width="100%"
+            height="100%"
+            fill="silver"
+            viewBox="0 0 16 16"
+            {...props}
+        >
+            <path d="M1 3h14v3H1zm0 4h14v3H1zm0 4h14v3H1z"></path>
+        </svg>
+    </button>
+</nav>
+
+<style>
+    nav {
+        display: flex;
+    }
+    .menuMobile{
+        display: flex;
+        border: 1px solid silver;
+        border-radius: 4px;
+        background: transparent;
+        width: 32px;
+        height: 32px;
+    }
+    @media screen and (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .menuMobile{
+            display: none;
+        }
+        .desktop {
+            display: flex;
+        }
+    }
+</style>

@@ -1,0 +1,47 @@
+@import url(./normalize.css);
+
+:root{
+    --primary-color: #333;
+    --seconadry-color: #f5f5f5;
+
+    --red-color:  #d31213;
+    --maroon-color: #a83738;
+    --dark-color: #6e6d6b;
+    --gray-color: #efefef;
+    --gray-dark-color: #bebebe;
+    --gray-light-color: #d9d9d9;
+    --gold-color: rgb(253, 243, 187);
+    --font: 'Courier New', Courier, monospace;
+    
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+html,
+body {
+    color: var(--seconadry-color);
+    font-family: var(--font);
+}
+body {
+    margin: 0;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    color: var(--gold-color);
+    font-family: var(--font);
+    background: var(--primary-color);
+    overflow-x: clip;
+}
+.btn {
+    padding: .5em 1em;
+    border: 1px solid white;
+    border-radius: 0.25em;
+    background: #D31313;
+    color: var(--gold-color)
+}
+.btn:hover{
+    background: var(--gold-color);
+    color: var(--primary-color);
+}
+
+
+ 

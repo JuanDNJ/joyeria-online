@@ -1,0 +1,127 @@
+---
+import fotoUno from "../assets/carrusel/amen-240212125857.jpg";
+import fotoDos from "../assets/carrusel/cruz-del-sur-iberica-sl-banner1-220304091056.jpg";
+import fotoTres from "../assets/carrusel/cruz-del-sur-iberica-sl-banner3-220304091214.jpg";
+import fotoCuatro from "../assets/carrusel/cruz-del-sur-iberica-sl-banner4-220304091219.jpg";
+import fotoCinco from "../assets/carrusel/cruz-del-sur-iberica-sl-banner6-220304091324.jpg";
+const items = [
+    {
+        src: fotoUno.src,
+        alt: "fotoUno",
+    },
+    {
+        src: fotoDos.src,
+        alt: "fotoDos",
+    },
+    {
+        src: fotoTres.src,
+        alt: "fotoTres",
+    },
+    {
+        src: fotoCuatro.src,
+        alt: "fotoCuatro",
+    },
+    {
+        src: fotoCinco.src,
+        alt: "fotoCinco",
+    },
+];
+---
+
+<section class="carrusel">
+    <article class="view__carrusel">
+        {
+            items.map((image, index) => (
+                <img class="img__carrusel" src={image.src} alt={image.alt} />
+            ))
+        }
+    </article>
+    <button class="btn menos">&lt;</button>
+    <button class="btn mas">&gt;</button>
+</section>
+
+<script>
+    const menos = document.querySelector(".menos") as HTMLButtonElement;
+    const mas = document.querySelector(".mas") as HTMLButtonElement;
+    let imageIndex = 0;
+    const viewCarrusel = document.querySelector(
+        ".view__carrusel",
+    ) as HTMLLIElement;
+    const listImages = [
+        ...Array.from(document.querySelectorAll(".img__carrusel")),
+    ] as [HTMLImageElement];
+    const cantidadDeImagenes = listImages.length as number;
+
+    function cambiarImagen(dir: number) {
+        imageIndex =
+            (imageIndex + dir + cantidadDeImagenes) % cantidadDeImagenes;
+        const nuevoDes = -imageIndex * 100;
+        viewCarrusel.style.transform = `translateX(${nuevoDes}%)`;
+    }
+
+    menos.addEventListener("click", function (event) {
+        cambiarImagen(-1);
+    });
+    mas.addEventListener("click", function (event) {
+        cambiarImagen(1);
+    });
+</script>
+<style>
+    .carrusel {
+        background-color: red;
+        width: 100%;
+        display: grid;
+        position: relative;
+        overflow: clip;
+        z-index: 0;
+        & .view__carrusel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    .btn {
+        padding: 0.25em 0.5em;
+        border: 1px solid white;
+        border-radius: 0.25em;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .mas,
+    .menos {
+        position: absolute;
+        margin: 0 1em;
+        font-size: 2em;
+        cursor: pointer;
+        color: white;
+    }
+    .mas:hover,
+    .menos:hover {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .mas {
+        top: 50%;
+        right: 0;
+    }
+    .menos {
+        top: 50%;
+        left: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    .img__carrusel {
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+        height: 256px;
+    }
+    @media screen and (min-width: 1024px) {
+        .img__carrusel {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+    }
+</style>

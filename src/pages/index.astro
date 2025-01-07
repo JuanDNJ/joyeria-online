@@ -1,11 +1,161 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import ImageCarrusel from "../components/ImageCarrusel.astro";
+import promoImage from "../assets/promobg.png";
+import Container from "../components/Container.astro";
+import Flex from "../components/Flex.astro";
+import Carrusel from "../components/Carrusel.astro";
+import Item from "../components/Item.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+	<section>
+		<!-- <ImageCarrusel
+			src={"cruz-del-sur-iberica-sl-banner1-220304091056.jpg"}
+			alt={"asdasd"}
+		/> -->
+		<Carrusel />
+	</section>
+
+	<section
+		id="pres"
+		style={{
+			background: "#D31313",
+		}}
+	>
+		<Container>
+			<article class="promo">
+				<p>
+					Adéntrate en nuestro viaje interior en la búsqueda del alma,
+					la parte más profunda y maravillosa de todos nosotros. Un
+					viaje que nos lleva a reflexionar sobre la esencia del amor
+					universal, sin limites ni confín alguno.
+				</p>
+				<p>
+					De esta experiencia metafórica nace el deseo de querer
+					compartir juntos la belleza de nuestras joyas y colecciones
+					con alma.
+				</p>
+				<p>AMEN, “así sea”</p>
+			</article>
+		</Container>
+	</section>
+	<section id="app">
+		<Container>
+			<div class="grid__promo">
+				<div class="item__promo">
+					<img class="img__promo" src={promoImage.src} alt="promo" />
+				</div>
+
+				<div class="item__promo">
+					<h2>
+						Bienvenidos al catálogo online de Amen, Doodle,
+						Disney&Luce
+					</h2>
+					<p>
+						Acceda con su nombre de usuario y contraseña para poder
+						comprar nuestros productos. Puede realizar su pedido
+						desde cualquier dispositivo , ya sea un ordenador, una
+						tablet o un smartphone. En cualquier lugar y hora.
+					</p>
+					<span
+						>Descargue ahora NTV App y empiece una nueva experiencia
+						de compra</span
+					>
+					<button class="btn">Desacargar nuestra App</button>
+				</div>
+			</div>
+		</Container>
+	</section>
+	<section id="marcas">
+		<Container>
+			<article class="marcas">
+				<h2>Nuestras Marcas</h2>
+				<div class="grid__marcas">
+					<img
+						class="img__marca"
+						src="./marcas/cruz-del-sur-iberica-sl-amen-210323142733.jpg"
+						alt=""
+					/>
+					<img
+						class="img__marca"
+						src="./marcas/cruz-del-sur-iberica-sl-doodle-210323142724.jpg"
+						alt=""
+					/>
+				</div>
+			</article>
+		</Container>
+	</section>
+	<section id="contacto">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.273839025522!2d-7.597660823336003!3d43.66327435177845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321ac356368e41%3A0x22dfb66992e61d7b!2sAv.%20Cervantes%2C%205%2C%2027850%20Viveiro%2C%20Lugo!5e0!3m2!1ses!2ses!4v1736245635687!5m2!1ses!2ses"
+			width="100%"
+			height="315px"
+			style="border:0;"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
 </Layout>
+<style>
+	section {
+		--secondary-color: white;
+		color: black;
+		background: var(--secondary-color);
+	}
+	.img__promo {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+	p {
+		padding: 0.5em 1em;
+		font-size: 1.2em;
+	}
+
+	.grid__promo {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+		padding: 2rem 0;
+	}
+	.promo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 25dvh;
+		padding: 1em;
+		& p {
+			padding: 0;
+			color: rgb(253, 243, 187);
+		}
+	}
+	.item__promo {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		gap: 1em;
+		padding: 1em;
+		& p {
+			padding: 0;
+		}
+	}
+
+	.marcas {
+		display: flex;
+		flex-direction: column;
+		& h2 {
+			text-align: center;
+		}
+	}
+	.grid__marcas {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+		padding: 2rem 0;
+
+		& .img__marca {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+</style>

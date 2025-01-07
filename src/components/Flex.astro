@@ -1,0 +1,15 @@
+---
+const {direction, justifyContent, alignItems, gap, bg, height} = Astro.props;
+---
+
+<section style={{
+    display: 'flex',
+    flexFlow: direction ? `${direction}` : 'initial',
+    justifyContent: justifyContent ? justifyContent : 'initial',
+    alignItems: alignItems ? alignItems :'initial',
+    gap: gap ? gap : '1rem',
+    background: bg ? bg : 'transparent',
+    height: height ? height : 'auto'
+}}>
+    <slot />
+</section>

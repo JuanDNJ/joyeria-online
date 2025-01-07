@@ -1,0 +1,16 @@
+---
+
+const { src, alt, ...attrs } = Astro.props;
+
+---
+<img src={`http://localhost:4321/carrusel/${src}`} alt={alt} {...attrs} />
+
+<style>
+  img {
+    margin-block: 2.5rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+</style>

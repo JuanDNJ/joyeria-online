@@ -1,0 +1,26 @@
+---
+const {
+    top,
+    left,
+    right,
+    bottom,
+    width,
+    height,
+    background,
+    zIndex,
+} = Astro.props
+---
+<section style={{
+    position: 'absolute',
+    top,
+    left,
+    right,
+    bottom,
+    width,
+    height,
+    background,
+    zIndex,
+}}>
+    <slot />
+</section>
+

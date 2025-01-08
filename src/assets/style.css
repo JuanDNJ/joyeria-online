@@ -12,14 +12,24 @@
     --gray-light-color: #d9d9d9;
     --gold-color: rgb(253, 243, 187);
     --font: 'Courier New', Courier, monospace;
+    --font-size: clamp(1em, 2.5vw, 1.1em);
 
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #D31313;
+    }
 }
 
 html,
 body {
-    font-size: clamp(12px, 2.5vw, 18px);
+    font-size: var(--font-size);
     color: var(--primary-color);
     font-family: var(--font);
 }

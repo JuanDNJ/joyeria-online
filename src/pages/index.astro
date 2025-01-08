@@ -6,41 +6,34 @@ import Container from "../components/Container.astro";
 import Flex from "../components/Flex.astro";
 import Carrusel from "../components/Carrusel.astro";
 import Item from "../components/Item.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Section from "../components/Section.astro";
 ---
 
 <Layout title="Home">
-	<section>
-		<!-- <ImageCarrusel
-			src={"cruz-del-sur-iberica-sl-banner1-220304091056.jpg"}
-			alt={"asdasd"}
-		/> -->
+	<Section>
 		<Carrusel />
-	</section>
+	</Section>
 
-	<section
-		id="pres"
-		style={{
-			background: "#D31313",
-		}}
-	>
+	<Section id="pres" bg="var(--red-color)">
 		<Container>
 			<article class="promo">
-				<p>
+				<Paragraph color="white">
 					Adéntrate en nuestro viaje interior en la búsqueda del alma,
 					la parte más profunda y maravillosa de todos nosotros. Un
 					viaje que nos lleva a reflexionar sobre la esencia del amor
 					universal, sin limites ni confín alguno.
-				</p>
-				<p>
+				</Paragraph>
+				<Paragraph color="white">
 					De esta experiencia metafórica nace el deseo de querer
 					compartir juntos la belleza de nuestras joyas y colecciones
 					con alma.
-				</p>
-				<p>AMEN, “así sea”</p>
+				</Paragraph>
+				<Paragraph color="white">AMEN, “así sea”</Paragraph>
 			</article>
 		</Container>
-	</section>
-	<section id="app">
+	</Section>
+	<Section id="app">
 		<Container>
 			<div class="grid__promo">
 				<div class="item__promo">
@@ -52,12 +45,12 @@ import Item from "../components/Item.astro";
 						Bienvenidos al catálogo online de Amen, Doodle,
 						Disney&Luce
 					</h2>
-					<p>
+					<Paragraph>
 						Acceda con su nombre de usuario y contraseña para poder
 						comprar nuestros productos. Puede realizar su pedido
 						desde cualquier dispositivo , ya sea un ordenador, una
 						tablet o un smartphone. En cualquier lugar y hora.
-					</p>
+					</Paragraph>
 					<span
 						>Descargue ahora NTV App y empiece una nueva experiencia
 						de compra</span
@@ -66,8 +59,8 @@ import Item from "../components/Item.astro";
 				</div>
 			</div>
 		</Container>
-	</section>
-	<section id="marcas">
+	</Section>
+	<Section id="marcas">
 		<Container>
 			<article class="marcas">
 				<h2>Nuestras Marcas</h2>
@@ -85,8 +78,8 @@ import Item from "../components/Item.astro";
 				</div>
 			</article>
 		</Container>
-	</section>
-	<section id="contacto">
+	</Section>
+	<Section id="contacto">
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.273839025522!2d-7.597660823336003!3d43.66327435177845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321ac356368e41%3A0x22dfb66992e61d7b!2sAv.%20Cervantes%2C%205%2C%2027850%20Viveiro%2C%20Lugo!5e0!3m2!1ses!2ses!4v1736245635687!5m2!1ses!2ses"
 			width="100%"
@@ -95,24 +88,16 @@ import Item from "../components/Item.astro";
 			allowfullscreen=""
 			loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</section>
+	</Section>
 </Layout>
 <style>
-	section {
-		--secondary-color: white;
-		color: black;
-		background: var(--secondary-color);
-	}
+	
 	.img__promo {
 		width: 100%;
 		height: auto;
 		object-fit: cover;
 	}
-	p {
-		padding: 0.5em 1em;
-		font-size: 1.2em;
-	}
-
+	
 	.grid__promo {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
@@ -124,6 +109,7 @@ import Item from "../components/Item.astro";
 		justify-content: center;
 		min-height: 25dvh;
 		padding: 1em;
+		gap: 1em;
 		& p {
 			padding: 0;
 			color: rgb(253, 243, 187);

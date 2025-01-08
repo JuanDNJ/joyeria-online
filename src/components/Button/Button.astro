@@ -4,5 +4,6 @@ import styleButton from "./btn.module.css";
 ---
 
 <button class={styleButton[btn]}>
+    <slot name="icon" />
     {label}
 </button>

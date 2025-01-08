@@ -34,3 +34,18 @@ button:hover {
 .dowload:hover {
     background: darkred;
 }
+
+.menuMobile {
+    display: inline-flex;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background: transparent;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .menuMobile {
+        display: none;
+    }
+
+}

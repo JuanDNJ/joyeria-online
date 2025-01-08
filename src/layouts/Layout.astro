@@ -1,6 +1,7 @@
 ---
 import "../assets/style.css";
 import Flex from "../components/Flex.astro";
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Item from "../components/Item.astro";
 import Navigation from "../components/Navigation.astro";
@@ -40,62 +41,11 @@ const title = Astro.props.title;
 		<main>
 			<slot />
 		</main>
-		<footer>
-			<section
-				style={{
-					display: "flex",
-					flexFlow: 'row wrap',
-					justifyContent: "space-around",
-					alignItems: 'center',
-					padding: '4rem 0'
-				}}
-			>
-				<article class="item__footer">
-					<h3>AMEN & DOODLE</h3>
-					<ul>
-						<li>Accede al catálogo</li>
-						<li>Nuevo usuario</li>
-					</ul>
-				</article>
-				<article class="item__footer">
-					<h3>INFORMACIÓN LEGAL</h3>
-					<ul>
-						<li>Aviso legal</li>
-						<li>Politica de cookies</li>
-						<li>Ley de protección de datos</li>
-						<li>Condiciones de venta</li>
-					</ul>
-				</article>
-			</section>
-		</footer>
+		<Footer />
 	</body>
 </html>
 <style>
 	main {
 		display: grid;
-		background-color: red;
-	}
-	h3 {
-		margin: 0;
-		padding: 0;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: column;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	li {
-		padding: 0;
-		margin: 0;
-	}
-	.item__footer{
-		min-height: 96px;
-		min-width: 256px;
-		display: flex;
-		flex-direction: column;
-		gap: .5rem;
 	}
 </style>

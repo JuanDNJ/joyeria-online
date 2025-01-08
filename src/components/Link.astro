@@ -5,7 +5,8 @@ const { to, label, className } = Astro.props;
 ---
 
 <a href={to} class={className}>
-     <slot name="icon" /> {label}
+    <slot name="icon" />  {label ? label : null} 
+    <slot name="logo" />
 </a>
 
 <style>

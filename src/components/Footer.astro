@@ -1,0 +1,57 @@
+<footer>
+    <section
+        style={{
+            display: "flex",
+            flexFlow: "row wrap",
+            justifyContent: "space-around",
+            alignItems: "center",
+            padding: "4rem 0",
+            color: "white",
+        }}
+    >
+        <article class="item__footer">
+            <h3>AMEN & DOODLE</h3>
+            <ul>
+                <li>Accede al catálogo</li>
+                <li>Nuevo usuario</li>
+            </ul>
+        </article>
+        <article class="item__footer">
+            <h3>INFORMACIÓN LEGAL</h3>
+            <ul>
+                <li>Aviso legal</li>
+                <li>Politica de cookies</li>
+                <li>Ley de protección de datos</li>
+                <li>Condiciones de venta</li>
+            </ul>
+        </article>
+    </section>
+</footer>
+<style>
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    li {
+        padding: 0;
+        margin: 0;
+    }
+    .item__footer {
+        min-height: 96px;
+        min-width: 256px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    footer {
+        background-color: var(--red-color);
+    }
+</style>

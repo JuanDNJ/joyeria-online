@@ -1,0 +1,13 @@
+---
+const {id, bg} = Astro.props
+---
+<section id={id} style={{
+    background: bg ? bg : 'transparent'
+}} >
+    <slot />
+</section>
+<style>
+    section{
+        display: grid;
+    }
+</style>

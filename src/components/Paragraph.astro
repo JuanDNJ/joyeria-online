@@ -1,18 +1,21 @@
 ---
-const {color} = Astro.props
+const { color } = Astro.props;
 ---
-<p style={{
-    color: color ? color : 'currentColor'
-}}>
+
+<p
+    style={{
+        color: color ? color : "currentColor",
+    }}
+>
     <slot />
 </p>
 <style>
-    p{
+    p {
         margin: 0;
-        font-size: clamp(12px, 2.5vw, 18px);
-        overflow: hidden; 
+        overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
+        font-size: clamp(1.1em, 2.5vw, 1.2em);
     }
 </style>

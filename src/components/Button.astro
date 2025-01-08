@@ -1,0 +1,25 @@
+---
+const {label, textColor, hoverColor} = Astro.props
+import styleButton from "./css/btn.module.css"
+---
+<button class={styleButton.btn} style={{
+    color: textColor ? textColor : 'currentColor',
+}}> 
+    {label}
+</button>
+
+<style>
+    :root{
+        --hover-color: var(--primary-color);
+    }
+    .btn {
+        padding: 0.5em 1em;
+        border: 1px solid white;
+        border-radius: 0.25em;
+        background: var(--red-color);
+    }
+    .btn:hover {
+        background: var(--gold-color);
+        color: var(--hover-color);
+    }
+</style>

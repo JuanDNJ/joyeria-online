@@ -1,6 +1,36 @@
-.btn {
+button {
     padding: 0.5em 1em;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 0.25em;
+    background: rgb(145, 141, 141);
+    color: snow;
+}
+
+button:hover {
+    background: rgb(105, 102, 102);
+}
+
+.alert {
     background: var(--red-color);
+}
+
+.success {
+    background: rgb(86, 209, 69);
+}
+
+.dowload {
+    background: var(--red-color);
+}
+
+/* HOVER */
+.alert:hover {
+    background: darkred;
+}
+
+.success:hover {
+    background: rgb(60, 146, 49);
+}
+
+.dowload:hover {
+    background: darkred;
 }

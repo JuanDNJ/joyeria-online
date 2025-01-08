@@ -4,6 +4,7 @@ import fotoDos from "../assets/carrusel/cruz-del-sur-iberica-sl-banner1-22030409
 import fotoTres from "../assets/carrusel/cruz-del-sur-iberica-sl-banner3-220304091214.jpg";
 import fotoCuatro from "../assets/carrusel/cruz-del-sur-iberica-sl-banner4-220304091219.jpg";
 import fotoCinco from "../assets/carrusel/cruz-del-sur-iberica-sl-banner6-220304091324.jpg";
+import Section from "./Section.astro";
 const items = [
     {
         src: fotoUno.src,
@@ -28,17 +29,17 @@ const items = [
 ];
 ---
 
-<section class="carrusel">
-    <article class="view__carrusel">
+<div class="carrusel">
+    <div class="view__carrusel">
         {
             items.map((image, index) => (
                 <img class="img__carrusel" src={image.src} alt={image.alt} />
             ))
         }
-    </article>
+    </div>
     <button class="btn menos">&lt;</button>
     <button class="btn mas">&gt;</button>
-</section>
+</div>
 
 <script>
     const menos = document.querySelector(".menos") as HTMLButtonElement;

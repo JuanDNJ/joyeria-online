@@ -8,6 +8,7 @@ import Carrusel from "../components/Carrusel.astro";
 import Item from "../components/Item.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Section from "../components/Section.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Home">
@@ -33,7 +34,7 @@ import Section from "../components/Section.astro";
 			</article>
 		</Container>
 	</Section>
-	<Section id="app">
+	<Section id="app" bg="#EFEFEF">
 		<Container>
 			<div class="grid__promo">
 				<div class="item__promo">
@@ -55,7 +56,7 @@ import Section from "../components/Section.astro";
 						>Descargue ahora NTV App y empiece una nueva experiencia
 						de compra</span
 					>
-					<button class="btn">Desacargar nuestra App</button>
+					<Button textColor="var(--secondary-color)" hoverColor="--hover-color: red" label="Desacargar nuestra App"/>
 				</div>
 			</div>
 		</Container>

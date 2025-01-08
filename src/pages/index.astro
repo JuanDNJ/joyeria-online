@@ -1,14 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ImageCarrusel from "../components/ImageCarrusel.astro";
 import promoImage from "../assets/promobg.png";
 import Container from "../components/Container.astro";
-import Flex from "../components/Flex.astro";
 import Carrusel from "../components/Carrusel.astro";
-import Item from "../components/Item.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Section from "../components/Section.astro";
-import Button from "../components/Button.astro";
+import Button from "../components/Button/Button.astro";
+import Title from "../components/Title/Title.astro";
 ---
 
 <Layout title="Home">
@@ -41,7 +39,10 @@ import Button from "../components/Button.astro";
 				</div>
 
 				<div class="item__promo">
-					<h2>Bienvenidos al catálogo online de Amen, Doodle, Disney&Luce</h2>
+					<Title
+						level="h2"
+						label="Bienvenidos al catálogo online de Amen, Doodle, Disney&Luce"
+					/>
 					<Paragraph>
 						Acceda con su nombre de usuario y contraseña para poder comprar
 						nuestros productos. Puede realizar su pedido desde cualquier
@@ -52,7 +53,6 @@ import Button from "../components/Button.astro";
 						>Descargue ahora NTV App y empiece una nueva experiencia de compra</span
 					>
 					<Button btn="dowload" label="Desacargar nuestra App" />
-					<Button btn="success" label="Desacargar nuestra App" />
 				</div>
 			</div>
 		</Container>
@@ -60,7 +60,12 @@ import Button from "../components/Button.astro";
 	<Section id="marcas">
 		<Container>
 			<article class="marcas">
-				<h2>Nuestras Marcas</h2>
+				<Title
+					className="textCenter"
+					level="h2"
+					label="Nuestras Marcas"
+					pd="1em"
+				/>
 				<div class="grid__marcas">
 					<img
 						class="img__marca"
@@ -80,7 +85,7 @@ import Button from "../components/Button.astro";
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.273839025522!2d-7.597660823336003!3d43.66327435177845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321ac356368e41%3A0x22dfb66992e61d7b!2sAv.%20Cervantes%2C%205%2C%2027850%20Viveiro%2C%20Lugo!5e0!3m2!1ses!2ses!4v1736245635687!5m2!1ses!2ses"
 			width="100%"
-			height="315px"
+			height="512px"
 			style="border:0;"
 			allowfullscreen=""
 			loading="lazy"
@@ -88,6 +93,11 @@ import Button from "../components/Button.astro";
 	</Section>
 </Layout>
 <style>
+	#contacto {
+		display: grid;
+		width: 100%;
+		padding: 1em;
+	}
 	.img__promo {
 		width: 100%;
 		height: auto;

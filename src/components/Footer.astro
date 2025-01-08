@@ -1,57 +1,60 @@
+---
+import Container from "./Container.astro";
+import Title from "./Title/Title.astro";
+import List from "./List/List.astro";
+import ItemList from "./List/ItemList.astro";
+---
+
 <footer>
-    <section
-        style={{
-            display: "flex",
-            flexFlow: "row wrap",
-            justifyContent: "space-around",
-            alignItems: "center",
-            padding: "4rem 0",
-            color: "white",
-        }}
-    >
-        <article class="item__footer">
-            <h3>AMEN & DOODLE</h3>
-            <ul>
-                <li>Accede al catálogo</li>
-                <li>Nuevo usuario</li>
-            </ul>
-        </article>
-        <article class="item__footer">
-            <h3>INFORMACIÓN LEGAL</h3>
-            <ul>
-                <li>Aviso legal</li>
-                <li>Politica de cookies</li>
-                <li>Ley de protección de datos</li>
-                <li>Condiciones de venta</li>
-            </ul>
-        </article>
-    </section>
+    <Container>
+        <section class="gridFooter">
+            <article class="item__footer">
+                <Title level="h3" label="AMEN & DOODLE" width="100%" />
+                <List>
+                    <ItemList label="Accede al catálogo" />
+                    <ItemList label="Nuevo usuario" />
+                </List>
+            </article>
+            <article class="item__footer">
+                <Title level="h3" label="INFORMACIÓN LEGAL" width="100%" />
+                <List>
+                    <ItemList label="Aviso legal" />
+                    <ItemList label="Politica de cookies" />
+                    <ItemList label="Ley de protección de datos" />
+                    <ItemList label="Condiciones de venta" />
+                </List>
+            </article>
+            <article class="item__footer">
+                <Title level="h3" label="CONTACTO" width="100%" />
+                <List>
+                    <ItemList label=""
+                        >Avda. Cervantes 5 27850 Viveiro (Lugo)</ItemList
+                    >
+                    <ItemList label="722356743" />
+                    <ItemList label="662555807" />
+                    <ItemList label="hola@ameniberica.com" />
+                </List>
+            </article>
+        </section>
+    </Container>
 </footer>
 <style>
-    h3 {
-        margin: 0;
-        padding: 0;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-    li {
-        padding: 0;
-        margin: 0;
-    }
-    .item__footer {
-        min-height: 96px;
-        min-width: 256px;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
     footer {
         background-color: var(--red-color);
+    }
+    .gridFooter {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1em;
+    }
+    .item__footer {
+        flex-grow: 2;
+        flex-basis: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: snow;
+        padding: 30px 1rem;
+        gap: 0.5rem;
     }
 </style>

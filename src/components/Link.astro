@@ -5,7 +5,8 @@ const { to, label, className } = Astro.props;
 ---
 
 <a href={to} class={className}>
-    <slot name="icon" />  {label ? label : null} 
+    <slot name="icon" />
+    {label ? label : null}
     <slot name="logo" />
 </a>
 
@@ -16,7 +17,7 @@ const { to, label, className } = Astro.props;
         text-decoration: none;
         padding: 0.5rem 1rem;
         margin: 0;
-        width: 100%; 
+        width: 100%;
     }
     a:hover {
         text-decoration: underline;
@@ -30,16 +31,15 @@ const { to, label, className } = Astro.props;
         text-decoration: none;
         background: var(--gray-color);
     }
-    .badget-admin{
+    .badget-admin {
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
         max-width: 24rem;
-       
     }
     .badget-admin:hover {
-        background: #0070f3;
+        background: var(--gray-color);
         text-decoration: none;
     }
     .fixed {
@@ -58,5 +58,10 @@ const { to, label, className } = Astro.props;
         height: 100%;
         background: #fff;
         z-index: 10;
+    }
+    .logo {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
     }
 </style>

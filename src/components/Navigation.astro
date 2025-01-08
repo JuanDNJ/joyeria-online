@@ -1,14 +1,14 @@
 ---
 import Link from "./Link.astro";
 import user from "../assets/user.svg";
-const { props} = Astro.props;
+const { props } = Astro.props;
 
 const linksNavigation = [
-	{ href: "#pres", text: "Presentación" },
-	{ href: "#app", text: "APP" },
-	{ href: "#marcas", text: "Marcas" },
-	{ href: "#contacto", text: "Contacto" },
-	{ href: "#catalogo", text: "Catálogo" },
+    { href: "#pres", text: "Presentación" },
+    { href: "#app", text: "APP" },
+    { href: "#marcas", text: "Marcas" },
+    { href: "#contacto", text: "Contacto" },
+    { href: "#catalogo", text: "Catálogo" },
 ];
 ---
 
@@ -18,17 +18,12 @@ const linksNavigation = [
             linksNavigation.map((link: any) => (
                 <Link to={link.href} label={link.text} className={`link`} />
             ))
-            
         }
-        <Link
-        to={`/admin`}
-        label={`Administracón`}
-        className={`badget-admin`}
-    >
-        <span slot="icon">
-            <img src={user.src} width="24" alt="" />
-        </span>
-    </Link>
+        <Link to={`/admin`} label={`Administracón`} className={`badget-admin`}>
+            <span slot="icon">
+                <img src={user.src} width="16" alt="" />
+            </span>
+        </Link>
     </div>
     <button class="menuMobile">
         <svg
@@ -47,7 +42,7 @@ const linksNavigation = [
     nav {
         display: flex;
     }
-    .menuMobile{
+    .menuMobile {
         display: flex;
         border: 1px solid silver;
         border-radius: 4px;
@@ -61,7 +56,7 @@ const linksNavigation = [
         }
     }
     @media screen and (min-width: 768px) {
-        .menuMobile{
+        .menuMobile {
             display: none;
         }
         .desktop {

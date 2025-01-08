@@ -1,0 +1,47 @@
+---
+const { label, level, className, style, pd, width } = Astro.props;
+import stylesTitle from "./title.module.css";
+---
+
+{
+  level === "h1" && (
+    <h1 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h1>
+  )
+}
+{
+  level === "h2" && (
+    <h2 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h2>
+  )
+}
+{
+  level === "h3" && (
+    <h3 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h3>
+  )
+}
+{
+  level === "h4" && (
+    <h4 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h4>
+  )
+}
+{
+  level === "h5" && (
+    <h5 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h5>
+  )
+}
+{
+  level === "h6" && (
+    <h6 class={stylesTitle[className]} style={{ padding: pd, width, ...style }}>
+      {label}
+    </h6>
+  )
+}

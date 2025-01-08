@@ -30,16 +30,5 @@ body {
     background: var(--seconadry-color);
     overflow-x: clip;
 }
-.btn {
-    padding: .5em 1em;
-    border: 1px solid white;
-    border-radius: 0.25em;
-    background: var(--red-color);
-}
-.btn:hover{
-    background: var(--gold-color);
-    color: var(--primary-color);
-}
-
 
  

@@ -1,0 +1,45 @@
+---
+import Container from "../../components/Container.astro";
+import Section from "../../components/Section.astro";
+import Title from "../../components/Title/Title.astro";
+import Layout from "../../layouts/Layout.astro";
+import mook from "../../mook/products.json";
+import catalogCSS from "./css/catalog.module.css";
+---
+
+<Layout>
+    <Section>
+        <Container>
+            <Title
+                className="textCenter"
+                level="h2"
+                s
+                label={"Catálogo"}
+                pd="1em"
+            />
+            <section class={catalogCSS.containerCatalog}>
+                {
+                    mook.products.map((product) => (
+                        <div class={catalogCSS.catalog}>
+                            <header class={catalogCSS.headerCatalog}>
+                                <picture>
+                                    <img
+                                        src={product.imageUrl}
+                                        alt={product.name}
+                                    />
+                                </picture>
+                            </header>
+                            <div class={catalogCSS.bodyCatalog}>
+                                <h3>{product.name}</h3>
+                                <p>{product.description}</p>
+                            </div>
+                            <footer class={catalogCSS.footerCatalog}>
+                                <span>${product.price}</span>
+                            </footer>
+                        </div>
+                    ))
+                }
+            </section>
+        </Container>
+    </Section>
+</Layout>

@@ -1,0 +1,620 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Elegante Anillo",
+            "description": "Un elegante anillo diseñado para realzar tu estilo. Ideal para ocasiones especiales.",
+            "price": 10.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 2,
+            "name": "Moderno Pulsera",
+            "description": "Una moderna pulsera que combina minimalismo y sofisticación para un look excepcional.",
+            "price": 20.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 3,
+            "name": "Exclusivo Collar",
+            "description": "Un exclusivo collar que destaca por sus finos detalles y estilo único.",
+            "price": 30.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 4,
+            "name": "Artesanal Pendientes",
+            "description": "Pendientes artesanales perfectos para resaltar la elegancia en cualquier evento.",
+            "price": 40.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 5,
+            "name": "Clásico Sortija",
+            "description": "Una sortija clásica con diseño atemporal, ideal para complementar cualquier conjunto.",
+            "price": 50.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 6,
+            "name": "Contemporáneo Dije",
+            "description": "Dije contemporáneo que aporta un toque moderno y delicado a tu imagen personal.",
+            "price": 60.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 7,
+            "name": "Elegante Reloj",
+            "description": "Reloj elegante con detalles sofisticados para complementar cualquier look formal.",
+            "price": 70.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 8,
+            "name": "Moderno Anillo",
+            "description": "Anillo moderno con diseño vanguardista, perfecto para marcar tendencias.",
+            "price": 80.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 9,
+            "name": "Exclusiva Pulsera",
+            "description": "Pulsera exclusiva que combina artesanía y modernidad en cada detalle.",
+            "price": 90.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 10,
+            "name": "Artesiano Collar ",
+            "description": "Collar de inspiración artesiana, ideal para quienes buscan un estilo auténtico.",
+            "price": 100.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 11,
+            "name": "Clásica Pendientes ",
+            "description": "Pendientes clásicos que aportan un toque refinado y elegante a tus conjuntos.",
+            "price": 110.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 12,
+            "name": "Contemporánea Sortija ",
+            "description": "Sortija contemporánea diseñada para potenciar la elegancia en el día a día.",
+            "price": 120.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 13,
+            "name": "Elegante Dije ",
+            "description": "Dije elegante que fusiona tradición y modernidad en un solo accesorio.",
+            "price": 130.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 14,
+            "name": "Moderno Reloj ",
+            "description": "Reloj moderno con líneas minimalistas y un diseño que marca tendencia.",
+            "price": 140.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 15,
+            "name": "Exclusivo Anillo ",
+            "description": "Anillo exclusivo que destaca por su diseño vanguardista y materiales de calidad.",
+            "price": 150.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 16,
+            "name": "Artesanal Pulsera ",
+            "description": "Pulsera artesanal que refleja la pasión por el detalle y la originalidad.",
+            "price": 160.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 17,
+            "name": "Clásico Collar ",
+            "description": "Collar clásico perfecto para realzar la feminidad y el encanto natural.",
+            "price": 170.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 18,
+            "name": "Contemporáneos Pendientes ",
+            "description": "Pendientes contemporáneos que aportan un toque de frescura y sofisticación.",
+            "price": 180.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 19,
+            "name": "Elegante Sortija ",
+            "description": "Sortija elegante que se distingue por su diseño refinado y materiales premium.",
+            "price": 190.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 20,
+            "name": "Moderno Dije ",
+            "description": "Dije moderno diseñado para complementar cualquier estilo con sutileza.",
+            "price": 200.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 21,
+            "name": "Exclusivo Reloj ",
+            "description": "Reloj exclusivo que fusiona funcionalidad y estilo en un diseño único.",
+            "price": 210.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 22,
+            "name": "Artesanal Anillo ",
+            "description": "Anillo artesanal con detalle meticuloso, ideal para quienes aprecian lo auténtico.",
+            "price": 220.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 23,
+            "name": "Clásica Pulsera ",
+            "description": "Pulsera clásica que evoca elegancia y tradición en cada trazo.",
+            "price": 230.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 24,
+            "name": "Contemporáneo Collar ",
+            "description": "Collar contemporáneo que mezcla innovación y estilo para cualquier ocasión.",
+            "price": 240.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 25,
+            "name": "Elegantes Pendientes ",
+            "description": "Pendientes elegantes diseñados para resaltar la belleza en cada detalle.",
+            "price": 250.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 26,
+            "name": "Modernos Sortija ",
+            "description": "Sortija moderna ideal para quienes buscan un accesorio con identidad y encanto.",
+            "price": 260.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 27,
+            "name": "Exclusivo Dije ",
+            "description": "Dije exclusivo que combina materiales de alta calidad con un diseño impactante.",
+            "price": 270.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 28,
+            "name": "Artesanal Reloj ",
+            "description": "Reloj artesanal con detalles únicos, perfecto para los amantes de lo original.",
+            "price": 280.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 29,
+            "name": "Clásico Anillo ",
+            "description": "Anillo clásico que destaca por su diseño sobrio y sofisticado.",
+            "price": 290.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 30,
+            "name": "Contemporánea Pulsera ",
+            "description": "Pulsera contemporánea ideal para quienes buscan fusionar modernidad y tradición.",
+            "price": 300.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 31,
+            "name": "Elegante Collar ",
+            "description": "Collar elegante que aporta un toque de distinción a cualquier atuendo.",
+            "price": 310.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 32,
+            "name": "Moderno Pendientes ",
+            "description": "Pendientes modernos con un diseño innovador que resaltan tu personalidad.",
+            "price": 320.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 33,
+            "name": "Exclusiva Sortija ",
+            "description": "Sortija exclusiva diseñada para destacar en cualquier evento especial.",
+            "price": 330.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 34,
+            "name": "Artesanal Dije ",
+            "description": "Dije artesanal que fusiona lo tradicional y lo moderno en un solo accesorio.",
+            "price": 340.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 35,
+            "name": "Clásico Reloj ",
+            "description": "Reloj clásico de diseño atemporal, perfecto para cualquier ocasión formal.",
+            "price": 350.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 36,
+            "name": "Contemporánea Anillo ",
+            "description": "Anillo contemporáneo que destaca por su vibrante combinación de formas y texturas.",
+            "price": 360.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 37,
+            "name": "Elegante Pulsera ",
+            "description": "Pulsera elegante diseñada meticulosamente para destacar en cualquier reunión.",
+            "price": 370.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 38,
+            "name": "Moderno Collar ",
+            "description": "Collar moderno con líneas limpias y un diseño que marca tendencia.",
+            "price": 380.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 39,
+            "name": "Exclusivos Pendientes ",
+            "description": "Pendientes exclusivos que resaltan por su sofisticación y originalidad.",
+            "price": 390.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 40,
+            "name": "Artesanal Sortija ",
+            "description": "Sortija artesanal con un diseño único que realza la belleza natural.",
+            "price": 400.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 41,
+            "name": "Clásico Dije ",
+            "description": "Dije clásico que combina tradición y modernidad en un accesorio imprescindible.",
+            "price": 410.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 42,
+            "name": "Contemporáneo Reloj ",
+            "description": "Reloj contemporáneo de diseño innovador, ideal para el espíritu moderno.",
+            "price": 420.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 43,
+            "name": "Elegante Anillo ",
+            "description": "Anillo elegante que resalta por su simplicidad y sofisticación.",
+            "price": 430.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 44,
+            "name": "Moderna Pulsera ",
+            "description": "Pulsera moderna que combina líneas limpias y un diseño impactante.",
+            "price": 440.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 45,
+            "name": "Exclusivo Collar ",
+            "description": "Collar exclusivo pensado para quienes buscan un toque de distinción en sus accesorios.",
+            "price": 450.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 46,
+            "name": "Artesanales Pendientes ",
+            "description": "Pendientes artesanales que destacan por su original diseño y finos detalles.",
+            "price": 460.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 47,
+            "name": "Clásica Sortija ",
+            "description": "Sortija clásica que evoca elegancia y un estilo inconfundible.",
+            "price": 470.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 48,
+            "name": "Contemporáneo Dije ",
+            "description": "Dije contemporáneo que aporta un toque de modernidad a cualquier atuendo.",
+            "price": 480.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 49,
+            "name": "Elegante Reloj ",
+            "description": "Reloj elegante, perfecto para complementar tanto looks formales como informales.",
+            "price": 490.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 50,
+            "name": "Moderno Anillo ",
+            "description": "Anillo moderno con un diseño vanguardista que resalta en cualquier ocasión.",
+            "price": 500.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 51,
+            "name": "Exclusiva Pulsera ",
+            "description": "Pulsera exclusiva que combina la esencia de la tradición con un toque contemporáneo.",
+            "price": 510.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 52,
+            "name": "Artesanal Collar ",
+            "description": "Collar artesanal ideal para quienes aprecian la fusión de técnicas tradicionales y modernas.",
+            "price": 520.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 53,
+            "name": "Clásicos Pendientes ",
+            "description": "Pendientes clásicos que resaltan por su diseño refinado y atemporal.",
+            "price": 530.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 54,
+            "name": "Contemporánea Sortija ",
+            "description": "Sortija contemporánea para quienes buscan un accesorio que marque estilo.",
+            "price": 540.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 55,
+            "name": "Elegante Dije ",
+            "description": "Dije elegante con detalles sutiles que complementan cualquier outfit.",
+            "price": 550.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 56,
+            "name": "Moderno Reloj ",
+            "description": "Reloj moderno, minimalista y perfecto para el día a día.",
+            "price": 560.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 57,
+            "name": "Exclusivo Anillo ",
+            "description": "Anillo exclusivo que combina lo mejor del diseño contemporáneo y la tradición.",
+            "price": 570.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 58,
+            "name": "Artesanal Pulsera ",
+            "description": "Pulsera artesanal pensada para resaltar la autenticidad en cada detalle.",
+            "price": 580.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 59,
+            "name": "Clásico Collar ",
+            "description": "Collar clásico de líneas simples y elegantes, ideal para cualquier ocasión.",
+            "price": 590.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 60,
+            "name": "Contemporáneos Pendientes ",
+            "description": "Pendientes contemporáneos que aportan un toque moderno y sofisticado.",
+            "price": 600.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 61,
+            "name": "Elegante Sortija ",
+            "description": "Sortija elegante de diseño refinado para un estilo inigualable.",
+            "price": 610.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 62,
+            "name": "Moderno Dije ",
+            "description": "Dije moderno que destaca por su originalidad y acabado impecable.",
+            "price": 620.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 63,
+            "name": "Exclusivo Reloj ",
+            "description": "Reloj exclusivo con un diseño sofisticado para el amante del lujo.",
+            "price": 630.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 64,
+            "name": "Artesanal Anillo ",
+            "description": "Anillo artesanal que fusiona técnicas tradicionales con un estilo actual.",
+            "price": 640.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 65,
+            "name": "Clásica Pulsera ",
+            "description": "Pulsera clásica que evoca elegancia y delicadeza en cada trazo.",
+            "price": 650.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 66,
+            "name": "Contemporáneo Collar ",
+            "description": "Collar contemporáneo diseñado para destacar en cualquier entorno.",
+            "price": 660.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 67,
+            "name": "Elegantes Pendientes ",
+            "description": "Pendientes elegantes que resaltan por su diseño y refinamiento.",
+            "price": 670.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 68,
+            "name": "Modernos Sortija ",
+            "description": "Sortija moderna con un diseño vanguardista que se adapta a cualquier estilo.",
+            "price": 680.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 69,
+            "name": "Exclusivo Dije ",
+            "description": "Dije exclusivo elaborado con materiales selectos para un acabado perfecto.",
+            "price": 690.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 70,
+            "name": "Artesanal Reloj ",
+            "description": "Reloj artesanal que destaca por su original diseño y funcionalidad.",
+            "price": 700.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 71,
+            "name": "Clásico Anillo ",
+            "description": "Anillo clásico que combina elegancia y un diseño atemporal para cualquier ocasión.",
+            "price": 710.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        },
+        {
+            "id": 72,
+            "name": "Contemporánea Pulsera ",
+            "description": "Pulsera contemporánea con un diseño único que resalta la individualidad.",
+            "price": 720.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Alma de fuego"
+        },
+        {
+            "id": 73,
+            "name": "Elegante Collar ",
+            "description": "Collar elegante, meticulosamente diseñado para un look sofisticado.",
+            "price": 730.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Ocean"
+        },
+        {
+            "id": 74,
+            "name": "Moderno Pendientes ",
+            "description": "Pendientes modernos que aportan un toque refrescante y contemporáneo.",
+            "price": 740.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Aureno"
+        },
+        {
+            "id": 75,
+            "name": "Exclusiva Sortija ",
+            "description": "Sortija exclusiva que destaca por su diseño vanguardista y elegante.",
+            "price": 750.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Brillar"
+        },
+        {
+            "id": 76,
+            "name": "Artesanal Dije ",
+            "description": "Dije artesanal con un diseño singular, para quienes buscan lo auténtico y único.",
+            "price": 760.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Roma"
+        },
+        {
+            "id": 77,
+            "name": "Clásico Reloj ",
+            "description": "Reloj clásico, un imprescindible que combina tradición y modernidad a la perfección.",
+            "price": 770.99,
+            "imageUrl": "./marcas/alma-de-fuego.jpg",
+            "brand": "Diamond"
+        }  
+    ]
+    }

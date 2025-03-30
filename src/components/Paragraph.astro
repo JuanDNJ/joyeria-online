@@ -1,10 +1,11 @@
 ---
-const { color } = Astro.props;
+const { color, size} = Astro.props;
 ---
 
 <p
     style={{
         color: color ? color : "currentColor",
+        fontSize: size ? size : "",
     }}
 >
     <slot />

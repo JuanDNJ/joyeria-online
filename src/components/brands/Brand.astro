@@ -1,0 +1,17 @@
+---
+import Title from "../Title/Title.astro";
+import brandsCSS from "./css/brands.module.css";
+const {src = "./marcas/mujer.jpg", title} = Astro.props;
+---
+
+<article class={brandsCSS.brand}>
+    <Title
+        className="textCenter"
+        level="h3"
+        label={title}
+        pd="1em"
+    />
+    <article>
+        <img class={brandsCSS.imageBrand} src={src} alt={title} />
+    </article>
+</article>

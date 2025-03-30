@@ -1,0 +1,23 @@
+---
+import Title from "../Title/Title.astro";
+import Brand from "./Brand.astro";
+import brandsCSS from "./css/brands.module.css";
+import mookBrands from "../../mook/brands.json"
+const {label = "Nuestras Marcas"} = Astro.props;
+---
+
+<article class={brandsCSS.brands}>
+    <Title
+        className="textCenter"
+        level="h2"
+        label={label}
+        pd="1em"
+    />
+    <div class={brandsCSS.container}>
+        {mookBrands.brands.map((brand) => {
+            return (
+                <Brand title={brand.name} src={brand.logo}/>
+            )
+        })}
+    </div>
+</article>

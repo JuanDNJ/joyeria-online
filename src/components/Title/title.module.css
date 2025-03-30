@@ -5,7 +5,7 @@ h4,
 h5 {
   padding: 0;
   margin: 0;
-  color: currentColor;
+  color: rgb(185, 102, 102);
   background: transparent;
   font-weight: 900;
 }

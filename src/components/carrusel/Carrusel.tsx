@@ -54,7 +54,7 @@ const Carrusel: FC = () => {
                 >
                     {CARRUSEL_ITEMS.map((item) => (
                         <section key={item.id} className={styles.slide}>
-                            <a className={styles.carruselItem} href={item.mark?.toLocaleLowerCase()}>
+                            <a className={styles.carruselItem} href={item.brand?.toLocaleLowerCase()}>
                                 <img
                                     className={styles.imagenCarrusel}
                                     title={item.alt}

@@ -1,10 +1,12 @@
 ---
-import fotoUno from "../assets/carrusel/amen-240212125857.jpg";
-import fotoDos from "../assets/carrusel/cruz-del-sur-iberica-sl-banner1-220304091056.jpg";
-import fotoTres from "../assets/carrusel/cruz-del-sur-iberica-sl-banner3-220304091214.jpg";
-import fotoCuatro from "../assets/carrusel/cruz-del-sur-iberica-sl-banner4-220304091219.jpg";
-import fotoCinco from "../assets/carrusel/cruz-del-sur-iberica-sl-banner6-220304091324.jpg";
-import Section from "./Section.astro";
+import fotoUno from "../../assets/carrusel/solare.png";
+import fotoDos from "../../assets/carrusel/099ba28f-089c-42ee-acae-62d8e8660362.png";
+import fotoTres from "../../assets/carrusel/443e67f9-3aaa-4926-8d4b-3346504030e5.png";
+import fotoCuatro from "../../assets/carrusel/dd344718-0029-4289-8940-9e1d2dbfff49.png";
+import fotoCinco from "../../assets/carrusel/d72bc375-6ce9-46ae-a44e-f3d904dcf6ad.png";
+
+import carruselCSS from "./css/carrusel.module.css";
+
 const items = [
     {
         src: fotoUno.src,
@@ -56,7 +58,7 @@ const items = [
     function cambiarImagen(dir: number) {
         imageIndex =
             (imageIndex + dir + cantidadDeImagenes) % cantidadDeImagenes;
-        const nuevoDes = -imageIndex * 100;
+        const nuevoDes = -imageIndex;
         viewCarrusel.style.transform = `translateX(${nuevoDes}%)`;
     }
 
@@ -69,16 +71,15 @@ const items = [
 </script>
 <style>
     .carrusel {
-        background-color: red;
         width: 100%;
         display: grid;
         position: relative;
         overflow: clip;
         z-index: 0;
-        & .view__carrusel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+    }
+    .view__carrusel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
     }
     .btn {
         padding: 0.25em 0.5em;
@@ -113,7 +114,7 @@ const items = [
         padding: 0;
     }
     .img__carrusel {
-        width: 100%;
+        width: 100dvw;
         object-fit: cover;
         object-position: left;
         height: 256px;

@@ -1,0 +1,56 @@
+.carrusel {
+    width: 100%;
+    display: grid;
+    position: relative;
+    overflow: clip;
+    z-index: 0;
+}
+.view__carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.btn {
+    padding: 0.25em 0.5em;
+    border: 1px solid white;
+    border-radius: 0.25em;
+    background: rgba(0, 0, 0, 0.5);
+}
+.mas,
+.menos {
+    position: absolute;
+    margin: 0 1em;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+.mas:hover,
+.menos:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+}
+.mas {
+    top: 50%;
+    right: 0;
+}
+.menos {
+    top: 50%;
+    left: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.img__carrusel {
+    width: 100dvw;
+    object-fit: cover;
+    object-position: left;
+    height: 256px;
+}
+@media screen and (min-width: 1024px) {
+    .img__carrusel {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+}

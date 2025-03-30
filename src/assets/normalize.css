@@ -10,7 +10,6 @@
 
  html {
     line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
   }
   
   /* Sections
@@ -289,6 +288,7 @@
   
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
+    appearance: textfield; /* Standard property for compatibility */
     outline-offset: -2px; /* 2 */
   }
   

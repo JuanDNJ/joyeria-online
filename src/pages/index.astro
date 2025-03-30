@@ -2,32 +2,30 @@
 import Layout from "../layouts/Layout.astro";
 import promoImage from "../assets/promobg.png";
 import Container from "../components/Container.astro";
-import Carrusel from "../components/Carrusel.astro";
+import Carrusel from "../components/carrusel/Carrusel.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Section from "../components/Section.astro";
 import Button from "../components/Button/Button.astro";
 import Title from "../components/Title/Title.astro";
+import NewCarrusel from "../components/carrusel/NewCarrusel";
 ---
 
 <Layout title="Home">
 	<Section>
-		<Carrusel />
+		<!-- <Carrusel /> -->
+		<NewCarrusel client:load />
 	</Section>
 
-	<Section id="pres" bg="var(--red-color)">
+	<Section id="pres" bg="var(--blue-color)">
 		<Container>
 			<article class="promo">
 				<Paragraph color="white">
-					Adéntrate en nuestro viaje interior en la búsqueda del alma, la parte
-					más profunda y maravillosa de todos nosotros. Un viaje que nos lleva a
-					reflexionar sobre la esencia del amor universal, sin limites ni confín
-					alguno.
+					Sumérgete en un viaje hacia nuestro interior, hacia ese lugar íntimo donde habita la esencia pura de lo que somos. Un recorrido de conexión espiritual y descubrimiento, inspirado por la fuerza infinita del amor universal que trasciende toda frontera.
 				</Paragraph>
 				<Paragraph color="white">
-					De esta experiencia metafórica nace el deseo de querer compartir
-					juntos la belleza de nuestras joyas y colecciones con alma.
+					De este camino nace el anhelo de compartir contigo nuestras joyas y colecciones, piezas únicas impregnadas de alma, significado y belleza auténtica.
 				</Paragraph>
-				<Paragraph color="white">AMEN, “así sea”</Paragraph>
+				<Paragraph color="white">Que la magia de esta conexión nos acompañe siempre.</Paragraph>
 			</article>
 		</Container>
 	</Section>
@@ -41,18 +39,15 @@ import Title from "../components/Title/Title.astro";
 				<div class="item__promo">
 					<Title
 						level="h1"
-						label="Bienvenidos al catálogo online de Amen, Doodle, Disney&Luce"
+						label="Te damos la bienvenida a nuestro catálogo online, un lugar creado para descubrir y disfrutar de la belleza única y la esencia inspiradora de Alma de fuego."
 					/>
 					<Paragraph>
-						Acceda con su nombre de usuario y contraseña para poder comprar
-						nuestros productos. Puede realizar su pedido desde cualquier
-						dispositivo , ya sea un ordenador, una tablet o un smartphone. En
-						cualquier lugar y hora.
+						Accede con tus credenciales desde cualquier dispositivo y realiza tu pedido fácilmente en cualquier momento y lugar. Descarga ahora y disfruta una nueva experiencia de compra.
 					</Paragraph>
 					<span
-						>Descargue ahora NTV App y empiece una nueva experiencia de compra</span
+						>Descargue ahora y empiece una nueva experiencia de compra</span
 					>
-					<Button btn="dowload" label="Desacargar nuestra App" />
+					<Button btn="dowload" label="Desacargar App" />
 				</div>
 			</div>
 		</Container>
@@ -69,12 +64,12 @@ import Title from "../components/Title/Title.astro";
 				<div class="grid__marcas">
 					<img
 						class="img__marca"
-						src="./marcas/cruz-del-sur-iberica-sl-amen-210323142733.jpg"
+						src="./marcas/mujer.jpg"
 						alt=""
 					/>
 					<img
 						class="img__marca"
-						src="./marcas/cruz-del-sur-iberica-sl-doodle-210323142724.jpg"
+						src="./marcas/hombre.jpg"
 						alt=""
 					/>
 				</div>
@@ -82,8 +77,9 @@ import Title from "../components/Title/Title.astro";
 		</Container>
 	</Section>
 	<Section id="contacto">
+
 		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.273839025522!2d-7.597660823336003!3d43.66327435177845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321ac356368e41%3A0x22dfb66992e61d7b!2sAv.%20Cervantes%2C%205%2C%2027850%20Viveiro%2C%20Lugo!5e0!3m2!1ses!2ses!4v1736245635687!5m2!1ses!2ses"
+			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d224129.52205484972!2d2.086168990284183!3d41.38749680233041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1743163311678!5m2!1ses!2ses"
 			width="100%"
 			height="512px"
 			style="border:0;"

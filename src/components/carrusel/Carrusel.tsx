@@ -2,7 +2,7 @@ import { type FC, useState, useEffect, useRef } from "react";
 import styles from "./css/newcarrusel.module.css";
 import { CARRUSEL_ITEMS } from "./config";
 
-const NewCarrusel: FC = () => {
+const Carrusel: FC = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const slideInterval = useRef<ReturnType<typeof setInterval> | null>(null);
     const totalSlides = CARRUSEL_ITEMS.length;
@@ -75,4 +75,4 @@ const NewCarrusel: FC = () => {
     );
 };
 
-export default NewCarrusel;
+export default Carrusel;

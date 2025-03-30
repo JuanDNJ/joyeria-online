@@ -2,18 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import promoImage from "../assets/promobg.png";
 import Container from "../components/Container.astro";
-import Carrusel from "../components/carrusel/Carrusel.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Section from "../components/Section.astro";
 import Button from "../components/Button/Button.astro";
 import Title from "../components/Title/Title.astro";
-import NewCarrusel from "../components/carrusel/NewCarrusel";
+import Carrusel from "../components/carrusel/Carrusel";
 ---
 
 <Layout title="Home">
 	<Section>
-		<!-- <Carrusel /> -->
-		<NewCarrusel client:load />
+		<Carrusel client:load />
 	</Section>
 
 	<Section id="pres" bg="var(--blue-color)">

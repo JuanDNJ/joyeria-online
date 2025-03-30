@@ -19,7 +19,7 @@ const Carrusel: FC = () => {
         if (!slideInterval.current) {
             slideInterval.current = setInterval(() => {
                 nextSlide();
-            }, 3000);
+            }, 6000);
         }
     };
 

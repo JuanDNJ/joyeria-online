@@ -7,6 +7,8 @@ import Section from "../components/Section.astro";
 import Button from "../components/Button/Button.astro";
 import Title from "../components/Title/Title.astro";
 import Carrusel from "../components/carrusel/Carrusel";
+import Brand from "../components/brands/Brand.astro";
+import Brands from "../components/brands/Brands.astro";
 ---
 
 <Layout title="Home">
@@ -17,13 +19,13 @@ import Carrusel from "../components/carrusel/Carrusel";
 	<Section id="pres" bg="var(--blue-color)">
 		<Container>
 			<article class="promo">
-				<Paragraph color="white">
+				<Paragraph color="white" size="1.5em">
 					Sumérgete en un viaje hacia nuestro interior, hacia ese lugar íntimo donde habita la esencia pura de lo que somos. Un recorrido de conexión espiritual y descubrimiento, inspirado por la fuerza infinita del amor universal que trasciende toda frontera.
 				</Paragraph>
-				<Paragraph color="white">
+				<Paragraph color="white" size="1.5em">
 					De este camino nace el anhelo de compartir contigo nuestras joyas y colecciones, piezas únicas impregnadas de alma, significado y belleza auténtica.
 				</Paragraph>
-				<Paragraph color="white">Que la magia de esta conexión nos acompañe siempre.</Paragraph>
+				<Paragraph color="white" size="1.5em">Que la magia de esta conexión nos acompañe siempre.</Paragraph>
 			</article>
 		</Container>
 	</Section>
@@ -36,7 +38,7 @@ import Carrusel from "../components/carrusel/Carrusel";
 
 				<div class="item__promo">
 					<Title
-						level="h1"
+						level="h2"
 						label="Te damos la bienvenida a nuestro catálogo online, un lugar creado para descubrir y disfrutar de la belleza única y la esencia inspiradora de Alma de fuego."
 					/>
 					<Paragraph>
@@ -52,26 +54,7 @@ import Carrusel from "../components/carrusel/Carrusel";
 	</Section>
 	<Section id="marcas">
 		<Container>
-			<article class="marcas">
-				<Title
-					className="textCenter"
-					level="h2"
-					label="Nuestras Marcas"
-					pd="1em"
-				/>
-				<div class="grid__marcas">
-					<img
-						class="img__marca"
-						src="./marcas/mujer.jpg"
-						alt=""
-					/>
-					<img
-						class="img__marca"
-						src="./marcas/hombre.jpg"
-						alt=""
-					/>
-				</div>
-			</article>
+			<Brands />
 		</Container>
 	</Section>
 	<Section id="contacto">
@@ -108,7 +91,7 @@ import Carrusel from "../components/carrusel/Carrusel";
 		flex-direction: column;
 		justify-content: center;
 		min-height: 25dvh;
-		padding: 1em;
+		padding: 5rem 1em;
 		gap: 1em;
 		& p {
 			padding: 0;

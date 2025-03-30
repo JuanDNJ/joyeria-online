@@ -1,0 +1,59 @@
+{
+    "brands": [
+        {
+            "name": "Ocean",
+            "description": "Ocean is a brand that specializes in high-quality, stylish clothing and accessories. Known for its unique designs and attention to detail, Mook offers a range of products that cater to fashion-forward individuals.",
+            "logo": "https://example.com/ocean-logo.png",
+            "website": "https://ocean.com",
+            "social_media": {
+                "instagram": "https://instagram.com/ocean",
+                "facebook": "https://facebook.com/ocean",
+                "twitter": "https://twitter.com/ocean"
+            }
+        },
+        {
+            "name": "Aureno",
+            "description": "Aureno is a brand that specializes in high-quality, stylish clothing and accessories. Known for its unique designs and attention to detail, Mook offers a range of products that cater to fashion-forward individuals.",
+            "logo": "https://example.com/aureno-logo.png",
+            "website": "https://aureno.com",
+            "social_media": {
+                "instagram": "https://instagram.com/aureno",
+                "facebook": "https://facebook.com/aureno",
+                "twitter": "https://twitter.com/aureno"
+            }
+        },
+        {
+            "name": "Brillar",
+            "description": "Brillar is a brand that specializes in high-quality, stylish clothing and accessories. Known for its unique designs and attention to detail, Mook offers a range of products that cater to fashion-forward individuals.",
+            "logo": "https://example.com/brillar-logo.png",
+            "website": "https://brillar.com",
+            "social_media": {
+                "instagram": "https://instagram.com/brillar",
+                "facebook": "https://facebook.com/brillar",
+                "twitter": "https://twitter.com/brillar"
+            }
+        },
+        {
+            "name": "Roma",
+            "description": "Roma is a brand that specializes in high-quality, stylish clothing and accessories. Known for its unique designs and attention to detail, Mook offers a range of products that cater to fashion-forward individuals.",
+            "logo": "https://example.com/roma-logo.png",
+            "website": "https://roma.com",
+            "social_media": {
+                "instagram": "https://instagram.com/roma",
+                "facebook": "https://facebook.com/roma",
+                "twitter": "https://twitter.com/roma"
+            }
+        },
+        {
+            "name": "Diamond",
+            "description": "Diamond is a brand that specializes in high-quality, stylish clothing and accessories. Known for its unique designs and attention to detail, Mook offers a range of products that cater to fashion-forward individuals.",
+            "logo": "https://example.com/diamond-logo.png",
+            "website": "https://diamond.com",
+            "social_media": {
+                "instagram": "https://instagram.com/diamond",
+                "facebook": "https://facebook.com/diamond",
+                "twitter": "https://twitter.com/diamond"
+            }
+        }
+    ]
+}

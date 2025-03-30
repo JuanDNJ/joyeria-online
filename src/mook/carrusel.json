@@ -1,0 +1,59 @@
+{
+    "carrusel": [
+        {
+            "id": 1,
+            "src": "Ocean.png",
+            "brand": "Ocean",
+            "alt": "Ocean",
+            "width": 512,
+            "height": 512,
+            "orientation": 1,
+            "format": "png",
+            "isESMImport": true
+        },
+        {
+            "id": 2,
+            "src": "Aureno.png",
+            "brand": "Aureno",
+            "alt": "Aureno",
+            "width": 512,
+            "height": 512,
+            "orientation": 1,
+            "format": "png",
+            "isESMImport": true
+        },
+        {
+            "id": 3,
+            "src": "Brillar.png",
+            "brand": "Brillar",
+            "alt": "Brillar",
+            "width": 512,
+            "height": 512,
+            "orientation": 1,
+            "format": "png",
+            "isESMImport": true
+        },
+        {
+            "id": 4,
+            "src": "Roma.png",
+            "brand": "Roma",
+            "alt": "Roma",
+            "width": 512,
+            "height": 512,
+            "orientation": 1,
+            "format": "png",
+            "isESMImport": true
+        },
+        {
+            "id": 5,
+            "src": "Diamond.png",
+            "brand": "Diamond",
+            "alt": "Diamond",
+            "width": 512,
+            "height": 512,
+            "orientation": 1,
+            "format": "png",
+            "isESMImport": true
+        }
+    ]
+}

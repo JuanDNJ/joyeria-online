@@ -1,17 +1,20 @@
 ---
 import Title from "../Title/Title.astro";
 import brandsCSS from "./css/brands.module.css";
-const {src = "./marcas/mujer.jpg", title} = Astro.props;
+const { src = "./marcas/mujer.jpg", title } = Astro.props;
 ---
 
-<article class={brandsCSS.brand}>
-    <Title
-        className="textCenter"
-        level="h3"
-        label={title}
-        pd="1em"
-    />
-    <article>
+<section class={brandsCSS.brand}>
+    <article class={brandsCSS.contentBrand}>
         <img class={brandsCSS.imageBrand} src={src} alt={title} />
+        <Title className="textCenter" level="h3" label={title} pd="1em" />
+        <section class={brandsCSS.contentDescription}>
+            <p class={brandsCSS.description}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </section>
+        <footer class={brandsCSS.footer}>
+           <button>Más</button>
+        </footer>
     </article>
-</article>
+</section>

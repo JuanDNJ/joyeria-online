@@ -6,18 +6,18 @@ import mookBrands from "../../mook/brands.json"
 const {label = "Nuestras Marcas"} = Astro.props;
 ---
 
-<article class={brandsCSS.brands}>
+<section class={brandsCSS.brands}>
     <Title
         className="textCenter"
         level="h2"
         label={label}
         pd="1em"
     />
-    <div class={brandsCSS.container}>
+    <article class={brandsCSS.container}>
         {mookBrands.brands.map((brand) => {
             return (
                 <Brand title={brand.name} src={brand.logo}/>
             )
         })}
-    </div>
-</article>
+    </article>
+</section>

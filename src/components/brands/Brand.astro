@@ -18,7 +18,10 @@ const { src = "./marcas/mujer.jpg", payload } = Astro.props;
             <a class={brandsCSS.web} href={payload.website} target="_blank" rel="noopener noreferrer">
                 Web
             </a>
-            <button class={brandsCSS.mas}>Más</button>
+        
+            <a class={brandsCSS.mas} href={payload.name.replaceAll(" ", "-").toLowerCase()} rel="noopener noreferrer">
+                Más
+            </a>
         </footer>
     </article>
 </section>

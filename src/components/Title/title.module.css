@@ -1,39 +1,89 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
-  padding: 0;
-  margin: 0;
-  color: rgb(185, 102, 102);
-  background: transparent;
-  font-weight: 900;
+
+
+.mainTitle,
+.firstTitle,
+.secondTitle,
+.thirdTitle,
+.forthTitle,
+.fifthTitle,
+.sixthTitle,
+.card {
+  color: var(--title-color);
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0.5em;
+  line-break: anywhere;
+
 }
 
-h1 {
-  font-size: clamp(1.5em, 2.5vw, 2em);
+
+.lvl_one {
+  font-size: 1.5rem;
 }
 
-h2 {
-  font-size: clamp(1.3em, 2.5vw, 1.4em);
+.lvl_two {
+  font-size: 1.8rem;
 }
 
-h3 {
-  font-size: clamp(1.2em, 2.5vw, 1.3em);
+.lvl_three {
+  font-size: 1.2rem;
 }
 
-h4 {
-  font-size: clamp(1.1em, 2.5vw, 1.2em);
+.lvl_four {
+  font-size: 1.1rem;
 }
 
-h5 {
-  font-size: clamp(1em, 2.5vw, 1.1em);
+.lvl_five {
+  font-size: 1rem;
 }
 
-h6 {
-  font-size: clamp(.9em, 2.5vw, 1em);
+.lvl_six {
+  font-size: .9rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+}
+
+.card {
+  font-size: 2rem;
 }
 
 .textCenter {
   text-align: center;
+}
+
+@media screen and (width>780px) {
+  .lvl_one {
+    font-size: 1.5rem;
+  }
+  
+  .lvl_two {
+    font-size: 1.3rem;
+  }
+  
+  .lvl_three {
+    font-size: 1.2rem;
+  }
+  
+  .lvl_four {
+    font-size: 1.1rem;
+  }
+  
+  .lvl_five {
+    font-size: 1rem;
+  }
+  
+  .lvl_six {
+    font-size: .9rem;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+  
+  .card {
+    font-size: 1.8rem;
+  }
+  
 }

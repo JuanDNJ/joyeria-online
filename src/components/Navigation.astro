@@ -1,28 +1,32 @@
 ---
 import Link from "./Link.astro";
-import user from "../assets/user.svg";
 import Icon from "./Icon/Icon.astro";
 import Button from "./Button/Button.astro";
-import menuSvg from "../assets/menu.svg";
+import menuSvg from "../assets/images/menu.svg";
 const { props } = Astro.props;
 
 const linksNavigation = [
-    { href: "/#pres", text: "Presentación" },
-    { href: "/#app", text: "APP" },
+    { href: "/#hero", text: "Presentación" },
+    { href: "/#dowloadApp", text: "APP" },
     { href: "/#marcas", text: "Marcas" },
     { href: "/#contacto", text: "Contacto" },
     { href: "/catalog", text: "Catálogo" },
-];
+    { href: "/alma-de-fuego", text: "Alma de fuego" },
+].toSorted((a, b) => {
+    if (a.text < b.text) return -1;
+    if (a.text > b.text) return 1;
+    return 0;
+});
 ---
 
 <nav>
-    <div class="desktop">
+    <article class="desktop">
         {
             linksNavigation.map((link: any) => (
                 <Link to={link.href} label={link.text} className={`link`} />
             ))
         }
-    </div>
+    </article>
     <Button btn="menuMobile">
         <Icon slot="icon" className="menuBars">
             <img src={menuSvg.src} alt="" />
@@ -42,7 +46,8 @@ const linksNavigation = [
     }
     @media screen and (min-width: 768px) {
         .desktop {
-            display: flex;
+            display: grid;
+            grid-auto-flow: column;
         }
     }
 </style>

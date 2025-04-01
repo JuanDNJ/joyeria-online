@@ -1,1 +1,15 @@
-<h1>Dashboard</h1>
+---
+import Title from "../components/Title/Title.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import Main from "../layouts/Main.astro";
+
+---
+
+<Layout>
+    <Main>
+        <Container variant="fluid">
+            <Title label="Dashboard" level="h1" />
+        </Container>
+    </Main>
+</Layout>

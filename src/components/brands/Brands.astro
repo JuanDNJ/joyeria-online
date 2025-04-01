@@ -3,20 +3,24 @@ import Title from "../Title/Title.astro";
 import Brand from "./Brand.astro";
 import brandsCSS from "./css/brands.module.css";
 import mookBrands from "../../mook/brands.json"
+import { lowercase, replaceBackslashWithHyphen } from "../../utils";
 const {label = "Nuestras Marcas"} = Astro.props;
 ---
 
-<section class={brandsCSS.brands}>
+<section class={brandsCSS.brands} id="marcas">
     <Title
-        className="textCenter"
-        level="h2"
+        style={{
+            textAlign: "center",
+        }}
+        level="h1"
         label={label}
-        pd="1em"
+       
     />
-    <article class={brandsCSS.container}>
+    <article class={brandsCSS.container} >
         {mookBrands.brands.map((brand) => {
+            const name = lowercase(replaceBackslashWithHyphen(brand.name));
             return (
-                <Brand title={brand.name} src={brand.logo}/>
+                <Brand payload={brand} title={name} src={brand.logo}/>
             )
         })}
     </article>

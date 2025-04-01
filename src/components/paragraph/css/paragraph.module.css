@@ -1,0 +1,24 @@
+p{
+    margin: 0;
+    padding: .66rem;
+    font-size: var(--font-size);
+}
+.default {
+    font-size: var(--font-size);
+}
+.brands {
+    font-size: var(--font-size);
+}
+.card {
+    font-size: var(--font-size);
+}
+
+.hero {
+    font-size: calc(var(--font-size) * 2);
+    color: white;
+
+    @media screen and (width>1024px) {
+        font-size: calc(var(--font-size) * 2.4);
+        
+    }
+}

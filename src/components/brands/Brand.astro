@@ -1,20 +1,27 @@
 ---
 import Title from "../Title/Title.astro";
 import brandsCSS from "./css/brands.module.css";
-const { src = "./marcas/mujer.jpg", title } = Astro.props;
+import Paragraph from "../paragraph/Paragraph.astro";
+const { src = "./marcas/mujer.jpg", payload } = Astro.props;
 ---
 
 <section class={brandsCSS.brand}>
     <article class={brandsCSS.contentBrand}>
-        <img class={brandsCSS.imageBrand} src={src} alt={title} />
-        <Title className="textCenter" level="h3" label={title} pd="1em" />
+        <img class={brandsCSS.imageBrand} src={src} alt={payload.name} />
+        <Title level="card" label={payload.name} />
         <section class={brandsCSS.contentDescription}>
-            <p class={brandsCSS.description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </p>
+            <Paragraph variant="card">
+                {payload.description}
+            </Paragraph>
         </section>
         <footer class={brandsCSS.footer}>
-           <button>Más</button>
+            <a class={brandsCSS.web} href={payload.website} target="_blank" rel="noopener noreferrer">
+                Web
+            </a>
+        
+            <a class={brandsCSS.mas} href={payload.name.replaceAll(" ", "-").toLowerCase()} rel="noopener noreferrer">
+                Más
+            </a>
         </footer>
     </article>
 </section>

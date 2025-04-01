@@ -4,6 +4,7 @@ button {
     border-radius: 0.25em;
     background: rgb(145, 141, 141);
     color: snow;
+    margin: 0;
 }
 
 button:hover {

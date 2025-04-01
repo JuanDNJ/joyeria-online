@@ -1,0 +1,70 @@
+---
+import promoImage from "../../assets/images/promobg.png";
+import Button from "../Button/Button.astro";
+import Paragraph from "../paragraph/Paragraph.astro";
+import Title from "../Title/Title.astro";
+---
+
+<section id="dowloadApp" class="dowloadApp">
+    <header class="header__dowloadApp">
+        <img class="img__promo" src={promoImage.src} alt="promo" />
+    </header>
+
+    <article class="container__dowloadApp">
+        <header>
+            <Title
+                style={{ textAlign: "initial" }}
+                level="h2"
+                label="Te damos la bienvenida a nuestro catálogo online, un lugar creado para descubrir y disfrutar de la belleza única y la esencia inspiradora de Alma de fuego."
+            />
+        </header>
+        <div class="descrption">
+            <Paragraph>
+                Accede con tus credenciales desde cualquier dispositivo y
+                realiza tu pedido fácilmente en cualquier momento y lugar.
+                Descarga ahora y disfruta una nueva experiencia de compra.
+            </Paragraph>
+            <Paragraph>
+                Descargue ahora y empiece una nueva experiencia de compra
+            </Paragraph>
+            <Paragraph>
+                <Button btn="dowload" label="Desacargar App" />
+            </Paragraph>
+        </div>
+    </article>
+</section>
+
+<style>
+    .dowloadApp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 2rem;
+        padding: 150px 1rem;
+        max-width: 1280px;
+        @media screen and (width>768px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .header__dowloadApp {
+        flex: 1;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .container__dowloadApp {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .descrption{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 0;
+    }
+</style>

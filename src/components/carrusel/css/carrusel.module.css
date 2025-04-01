@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     position: relative;
-    overflow: clip;
+    overflow: hidden;
     z-index: 0;
 }
 .view__carrusel {

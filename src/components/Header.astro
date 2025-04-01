@@ -1,5 +1,7 @@
 ---
-import Container from "./Container.astro";
+import Container from "../layouts/Container.astro";
+import Link from "./Link.astro";
+import Navigation from "./Navigation.astro";
 const linksNavigation = [
 	{ href: "/", text: "Presentación" },
 	{ href: "#app", text: "APP" },
@@ -11,16 +13,37 @@ const linksNavigation = [
 
 <header>
 	<Container>
-		<slot />
+		<section
+			style={{
+				display: "flex",
+				alignItems: "center",
+				justifyContent: "space-between",
+			}}
+		>
+			<a class="link" href="/#carrusel">
+				<img src="./android-chrome-512x512.png" width={48} alt="Logo" />
+			</a>
+			<Navigation />
+		</section>
 	</Container>
 </header>
 <style>
 	header {
 		position: sticky;
 		top: 0;
-		background: white;
 		/* border-bottom: 1px solid silver; */
 		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 		z-index: 100;
+		background-color: white;
+		display: flex;
+		align-items: center;
+	}
+	.link{
+		padding: 0;
+		margin: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
 	}
 </style>

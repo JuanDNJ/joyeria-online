@@ -1,0 +1,19 @@
+.mainContent {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.default,
+.fluid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fluid {
+    min-width: 100%;
+}
+
+.default {
+   
+    max-width: var(--max-width);
+}

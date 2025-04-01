@@ -1,22 +1,40 @@
 ---
-const { color, size} = Astro.props;
+const { color, size, className } = Astro.props;
 ---
 
 <p
+    class={className}
     style={{
         color: color ? color : "currentColor",
         fontSize: size ? size : "",
+        padding: ".45rem .95rem",
     }}
 >
     <slot />
 </p>
+
+
 <style>
     p {
         margin: 0;
         overflow: hidden;
-        /* display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; */
-        font-size: clamp(1.1em, 2.5vw, 1.2em);
+        font-size: calc(var(--font-size) + 2px);
+
+        @media screen and (width>480px) {
+            font-size: 1.8rem;
+        }
+        @media screen and (width>780px) {
+            font-size: calc(var(--font-size) + 4px);
+        }
+    }
+    p.card {
+        font-size: calc(var(--font-size-card) + 2px);
+
+        @media screen and (width>480px) {
+            font-size: 1.8rem;
+        }
+        @media screen and (width>780px) {
+            font-size: calc(var(--font-size-card) + 4px);
+        }
     }
 </style>

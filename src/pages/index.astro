@@ -18,17 +18,25 @@ import Brands from "../components/brands/Brands.astro";
 	<Section id="pres" bg="var(--blue-color)">
 		<Container>
 			<article class="promo">
-				<Paragraph color="white" size="1.5em">
-					Sumérgete en un viaje hacia nuestro interior, hacia ese lugar íntimo donde habita la esencia pura de lo que somos. Un recorrido de conexión espiritual y descubrimiento, inspirado por la fuerza infinita del amor universal que trasciende toda frontera.
+				<Paragraph color="white">
+					Sumérgete en un viaje hacia nuestro interior, hacia ese
+					lugar íntimo donde habita la esencia pura de lo que somos.
+					Un recorrido de conexión espiritual y descubrimiento,
+					inspirado por la fuerza infinita del amor universal que
+					trasciende toda frontera.
 				</Paragraph>
-				<Paragraph color="white" size="1.5em">
-					De este camino nace el anhelo de compartir contigo nuestras joyas y colecciones, piezas únicas impregnadas de alma, significado y belleza auténtica.
+				<Paragraph color="white">
+					De este camino nace el anhelo de compartir contigo nuestras
+					joyas y colecciones, piezas únicas impregnadas de alma,
+					significado y belleza auténtica.
 				</Paragraph>
-				<Paragraph color="white" size="1.5em">Que la magia de esta conexión nos acompañe siempre.</Paragraph>
+				<Paragraph color="white">
+					Que la magia de esta conexión nos acompañe siempre.
+				</Paragraph >
 			</article>
 		</Container>
 	</Section>
-	<Section id="app" bg="#EFEFEF">
+	<Section id="dowloadApp" bg="#EFEFEF">
 		<Container>
 			<div class="grid__promo">
 				<div class="item__promo">
@@ -37,27 +45,33 @@ import Brands from "../components/brands/Brands.astro";
 
 				<div class="item__promo">
 					<Title
+						style={{ textAlign: "initial" }}
 						level="h2"
 						label="Te damos la bienvenida a nuestro catálogo online, un lugar creado para descubrir y disfrutar de la belleza única y la esencia inspiradora de Alma de fuego."
 					/>
 					<Paragraph>
-						Accede con tus credenciales desde cualquier dispositivo y realiza tu pedido fácilmente en cualquier momento y lugar. Descarga ahora y disfruta una nueva experiencia de compra.
+						Accede con tus credenciales desde cualquier dispositivo
+						y realiza tu pedido fácilmente en cualquier momento y
+						lugar. Descarga ahora y disfruta una nueva experiencia
+						de compra.
 					</Paragraph>
-					<span
-						>Descargue ahora y empiece una nueva experiencia de compra</span
-					>
-					<Button btn="dowload" label="Desacargar App" />
+					<Paragraph>
+						Descargue ahora y empiece una nueva experiencia de
+						compra
+					</Paragraph>
+					<Paragraph>
+						<Button btn="dowload" label="Desacargar App" />
+					</Paragraph>
 				</div>
 			</div>
 		</Container>
 	</Section>
-	<Section id="marcas">
+	<Section >
 		<Container>
 			<Brands />
 		</Container>
 	</Section>
 	<Section id="contacto">
-
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d224129.52205484972!2d2.086168990284183!3d41.38749680233041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1743163311678!5m2!1ses!2ses"
 			width="100%"
@@ -70,9 +84,18 @@ import Brands from "../components/brands/Brands.astro";
 </Layout>
 <style>
 	#contacto {
-		display: grid;
+		display: flex;
 		width: 100%;
-		padding: 1em;
+		height: 100%;
+	}
+	#dowloadApp{
+		padding-top: 100px;
+	}
+	.promo {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 4rem 1rem;
 	}
 	.img__promo {
 		width: 100%;
@@ -81,31 +104,21 @@ import Brands from "../components/brands/Brands.astro";
 	}
 
 	.grid__promo {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-		padding: 2rem 0;
-	}
-	.promo {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		min-height: 25dvh;
-		padding: 5rem 1em;
-		gap: 1em;
-		& p {
-			padding: 0;
-			color: rgb(253, 243, 187);
+		flex-direction: row ;
+		padding: 4rem 1rem;
+		@media screen and (width<768px) {
+			flex-direction: column;
+			
 		}
 	}
+
 	.item__promo {
+		flex: 1;
 		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		gap: 1em;
-		padding: 1em;
-		& p {
-			padding: 0;
-		}
+		flex-flow: column;
+		gap: 1rem;
+		padding: 1rem 0;
 	}
 
 	.marcas {

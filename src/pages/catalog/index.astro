@@ -1,5 +1,6 @@
 ---
 import Container from "../../components/Container.astro";
+import Paragraph from "../../components/Paragraph.astro";
 import Section from "../../components/Section.astro";
 import Title from "../../components/Title/Title.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -11,29 +12,30 @@ import catalogCSS from "./css/catalog.module.css";
     <Section>
         <Container>
             <Title
-                className="textCenter"
-                level="h2"
-                s
+                level="h1"
                 label={"Catálogo"}
-                pd="1em"
             />
             <section class={catalogCSS.containerCatalog}>
                 {
                     mook.products.map((product) => (
-                        <div class={catalogCSS.catalog}>
-                            <header class={catalogCSS.headerCatalog}>
-                                <picture>
+                        <div class={catalogCSS.product}>
+                            <header class={catalogCSS.header}>
+                                <section class={catalogCSS.productImage}>
+                                    
                                     <img
+                                        class={catalogCSS.imageProduct}
                                         src={product.imageUrl}
                                         alt={product.name}
                                     />
-                                </picture>
+                                </section>
                             </header>
-                            <div class={catalogCSS.bodyCatalog}>
-                                <h3>{product.name}</h3>
-                                <p>{product.description}</p>
+                            <div class={catalogCSS.body}>
+                                <Title label={product.name} level="h3" />
+                                <Paragraph size="small" >
+                                    {product.description}
+                                </Paragraph>
                             </div>
-                            <footer class={catalogCSS.footerCatalog}>
+                            <footer class={catalogCSS.footer}>
                                 <span>${product.price}</span>
                             </footer>
                         </div>

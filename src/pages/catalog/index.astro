@@ -1,47 +1,38 @@
 ---
-import Container from "../../components/Container.astro";
-import Paragraph from "../../components/Paragraph.astro";
-import Section from "../../components/Section.astro";
+import Paragraph from "../../components/paragraph/Paragraph.astro";
 import Title from "../../components/Title/Title.astro";
+import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import mook from "../../mook/products.json";
 import catalogCSS from "./css/catalog.module.css";
 ---
 
 <Layout>
-    <Section>
-        <Container>
-            <Title
-                level="h1"
-                label={"Catálogo"}
-            />
-            <section class={catalogCSS.containerCatalog}>
-                {
-                    mook.products.map((product) => (
-                        <div class={catalogCSS.product}>
-                            <header class={catalogCSS.header}>
-                                <section class={catalogCSS.productImage}>
-                                    
-                                    <img
-                                        class={catalogCSS.imageProduct}
-                                        src={product.imageUrl}
-                                        alt={product.name}
-                                    />
-                                </section>
-                            </header>
-                            <div class={catalogCSS.body}>
-                                <Title label={product.name} level="h3" />
-                                <Paragraph size="small" >
-                                    {product.description}
-                                </Paragraph>
-                            </div>
-                            <footer class={catalogCSS.footer}>
-                                <span>${product.price}</span>
-                            </footer>
+    <Container>
+        <Title level="h1" label={"Catálogo"} />
+        <section class={catalogCSS.containerCatalog}>
+            {
+                mook.products.map((product) => (
+                    <div class={catalogCSS.product}>
+                        <header class={catalogCSS.header}>
+                            <section class={catalogCSS.productImage}>
+                                <img
+                                    class={catalogCSS.imageProduct}
+                                    src={product.imageUrl}
+                                    alt={product.name}
+                                />
+                            </section>
+                        </header>
+                        <div class={catalogCSS.body}>
+                            <Title label={product.name} level="h3" />
+                            <Paragraph>{product.description}</Paragraph>
                         </div>
-                    ))
-                }
-            </section>
-        </Container>
-    </Section>
+                        <footer class={catalogCSS.footer}>
+                            <span>${product.price}</span>
+                        </footer>
+                    </div>
+                ))
+            }
+        </section>
+    </Container>
 </Layout>

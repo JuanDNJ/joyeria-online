@@ -36,8 +36,8 @@ const Carrusel: FC = () => {
     }, []);
 
     return (
-        <section className={styles.carrusel}>
-            <button onClick={prevSlide} className={styles.btnLeft}>
+        <section id="carrusel" className={styles.carrusel}>
+            <button type="button" onClick={prevSlide} className={styles.btnLeft}>
                 &lt;
             </button>
             <article 

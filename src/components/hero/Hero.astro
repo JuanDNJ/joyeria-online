@@ -1,0 +1,32 @@
+---
+import Paragraph from "../../components/paragraph/Paragraph.astro";
+---
+<article id="hero" class="hero">
+    <slot>
+        <Paragraph variant="hero">
+            Sumérgete en un viaje hacia nuestro interior, hacia ese
+            lugar íntimo donde habita la esencia pura de lo que somos.
+            Un recorrido de conexión espiritual y descubrimiento,
+            inspirado por la fuerza infinita del amor universal que
+            trasciende toda frontera.
+        </Paragraph>
+        <Paragraph variant="hero">De este camino nace el anhelo de compartir contigo
+            nuestras joyas y colecciones, piezas únicas impregnadas de
+            alma, significado y belleza auténtica.
+        </Paragraph>
+        <Paragraph variant="hero">
+            Que la magia de esta conexión nos acompañe siempre.
+        </Paragraph>
+    </slot>
+</article>
+
+<style>
+	.hero {
+		display: flex;
+        width: 100%;
+		flex-direction: column;
+        padding: 1rem 0;
+		gap: 1rem;
+        padding: 8rem 0 8rem 0;
+	}
+</style>

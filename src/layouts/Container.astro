@@ -1,0 +1,26 @@
+---
+import layoutCSS from "./css/layout.module.css";
+
+type Variants = "default" | "fluid";
+
+interface Props {
+    variant?: Variants;
+    bgColor?: string;
+}
+const { variant = "default", bgColor} = Astro.props;
+
+const classList = {
+    default: layoutCSS.default,
+    fluid: layoutCSS.fluid,
+}
+---
+
+<section
+    class={classList[variant]}
+    style={{
+        background: bgColor ? bgColor : "transparent",
+    }}
+>
+    <slot />
+</section>
+

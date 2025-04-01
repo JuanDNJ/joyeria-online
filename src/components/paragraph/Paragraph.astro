@@ -1,0 +1,31 @@
+---
+import paragraphCSS from "./css/paragraph.module.css";
+
+type Variants = "default" | "card" | "hero"; 
+
+interface Props {
+    variant?: Variants;
+}
+
+const classList = {
+    default: paragraphCSS.default,
+    card: paragraphCSS.card,
+    hero: paragraphCSS.hero,
+}
+
+const { variant = "default" } = Astro.props;
+---
+
+<p class={classList[variant]} >
+    <slot />
+</p>
+<style>
+    .paragraph {
+        margin: 0;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+    .paragraph.card {
+        font-size: var(--font-size-card);
+    }
+</style>

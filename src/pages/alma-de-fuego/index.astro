@@ -1,7 +1,6 @@
 ---
-import Container from "../../components/Container.astro";
-import Section from "../../components/Section.astro";
 import VideoMP4 from "../../components/videomp4/VideoMP4";
+import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import almaCSS from "./css/alma_de_fuego.module.css";
 import imgAlma from "./images/alma-de-fuego.png";
@@ -12,24 +11,46 @@ const emoji = "🔥 Alma de Fuego 🔥";
 ---
 
 <Layout>
-    <Section>
-        <Container>
-            <h1>Descubre los Collares que D tu Pasión Interespiertanior</h1>
-            <img
-                src={imgAlma.src}
-                alt={emoji}
-                width="100%"
-                height="auto"
-                class={almaCSS.img}
-            />
-            <h2>Por qué Alma de Fuego es Única</h2>
-            <p>
-                Cada collar de Alma de Fuego está diseñado para conectar con tu
-                esencia más profunda, esa que arde con pasión y se expresa en tu
-                día a día. Realizados artesanalmente con materiales exclusivos,
-                estos collares no solo adornan, sino que encienden tu
-                autenticidad.
-            </p>
+    <Container>
+        <h1>Descubre los Collares que D tu Pasión Interespiertanior</h1>
+        <img
+            src={imgAlma.src}
+            alt={emoji}
+            width="100%"
+            height="auto"
+            class={almaCSS.img}
+        />
+        <h2>Por qué Alma de Fuego es Única</h2>
+        <p>
+            Cada collar de Alma de Fuego está diseñado para conectar con tu
+            esencia más profunda, esa que arde con pasión y se expresa en tu día
+            a día. Realizados artesanalmente con materiales exclusivos, estos
+            collares no solo adornan, sino que encienden tu autenticidad.
+        </p>
+        <img
+            src={collar1.src}
+            alt={emoji}
+            width="100%"
+            height="auto"
+            class={almaCSS.img}
+        />
+
+        <ul>
+            <h3>Colecciones Exclusivas</h3>
+            <li>
+                Colección Brasas de Pasión: Con piedras rojas intensas que
+                simbolizan fuerza y valentía.
+            </li>
+            <li>
+                Colección Destellos Dorados: Inspirada en la luz y energía del
+                sol, aportando vitalidad y sofisticación.
+            </li>
+            <li>
+                Colección Serenidad Ámbar: Diseñada para equilibrar tu energía
+                interior con la belleza calmante del ámbar natural.
+            </li>
+        </ul>
+        <section>
             <img
                 src={collar1.src}
                 alt={emoji}
@@ -37,96 +58,73 @@ const emoji = "🔥 Alma de Fuego 🔥";
                 height="auto"
                 class={almaCSS.img}
             />
+            <img
+                src={collar1.src}
+                alt={emoji}
+                width="100%"
+                height="auto"
+                class={almaCSS.img}
+            />
+            <img
+                src={collar1.src}
+                alt={emoji}
+                width="100%"
+                height="auto"
+                class={almaCSS.img}
+            />
+        </section>
 
-            <ul>
-                <h3>Colecciones Exclusivas</h3>
-                <li>
-                    Colección Brasas de Pasión: Con piedras rojas intensas que
-                    simbolizan fuerza y valentía.
-                </li>
-                <li>
-                    Colección Destellos Dorados: Inspirada en la luz y energía
-                    del sol, aportando vitalidad y sofisticación.
-                </li>
-                <li>
-                    Colección Serenidad Ámbar: Diseñada para equilibrar tu
-                    energía interior con la belleza calmante del ámbar natural.
-                </li>
-            </ul>
-            <section>
-                <img
-                    src={collar1.src}
-                    alt={emoji}
-                    width="100%"
-                    height="auto"
-                    class={almaCSS.img}
-                />
-                <img
-                    src={collar1.src}
-                    alt={emoji}
-                    width="100%"
-                    height="auto"
-                    class={almaCSS.img}
-                />
-                <img
-                    src={collar1.src}
-                    alt={emoji}
-                    width="100%"
-                    height="auto"
-                    class={almaCSS.img}
-                />
-            </section>
+        <h2>Testimonios que Inspiran</h2>
+        <p>
+            “Desde que llevo Alma de Fuego, me siento segura, radiante,
+            conectada con mi poder interior. Simplemente lo amo.” — Lucía P.
+        </p>
+        <p>
+            “Cada collar es único, siento que tengo un pedacito de arte que me
+            hace sentir poderosa y elegante.” — Andrea M.
+        </p>
+        <p></p>
 
-            <h2>Testimonios que Inspiran</h2>
-            <p>
-                “Desde que llevo Alma de Fuego, me siento segura, radiante,
-                conectada con mi poder interior. Simplemente lo amo.” — Lucía P.
-            </p>
-            <p>
-                “Cada collar es único, siento que tengo un pedacito de arte que
-                me hace sentir poderosa y elegante.” — Andrea M.
-            </p>
-            <p></p>
+        <!-- [Imagen: Clientes satisfechas llevando distintos collares en situaciones cotidianas, mostrando felicidad y estilo.] -->
 
-            <!-- [Imagen: Clientes satisfechas llevando distintos collares en situaciones cotidianas, mostrando felicidad y estilo.] -->
+        <h2>Compra Ahora y Despierta tu Alma</h2>
+        <span
+            ><strong>¡Oferta de lanzamiento!</strong> Consigue un 20% de descuento
+            en tu primer collar usando el código <strong>FUEGO20</strong>.</span
+        >
 
-            <h2>Compra Ahora y Despierta tu Alma</h2>
-            <span
-                ><strong>¡Oferta de lanzamiento!</strong> Consigue un 20% de descuento
-                en tu primer collar usando el código <strong>FUEGO20</strong
-                >.</span
-            >
-           
-            <!-- [Botón llamativo con texto: COMPRAR AHORA] -->
-            <h3>Alma de Fuego, joyas que hablan de ti.</h3>
-            <!-- <img  src={giftmujer.src} alt="" onclick="togglePlay()" /> -->
-             
-              <!-- <VideoMP4 id="animatedGif", mp4={videotmujer}, poster={giftmujer.src}  /> -->
-               <VideoMP4
-                id="animatedGif"
-                mp4={videotmujer}
-                poster={giftmujer.src}
-                client:load
-                />
-         
-        </Container>
-    </Section>
+        <!-- [Botón llamativo con texto: COMPRAR AHORA] -->
+        <h3>Alma de Fuego, joyas que hablan de ti.</h3>
+        <!-- <img  src={giftmujer.src} alt="" onclick="togglePlay()" /> -->
+
+        <!-- <VideoMP4 id="animatedGif", mp4={videotmujer}, poster={giftmujer.src}  /> -->
+        <VideoMP4
+            id="animatedGif"
+            mp4={videotmujer}
+            poster={giftmujer.src}
+            client:load
+        />
+    </Container>
 </Layout>
 <script>
     let paused = false;
     function toggleGif() {
-      paused = !paused;
-      const animatedGif = document.getElementById("animatedGif") as HTMLVideoElement;
-      const staticImg = document.getElementById("staticImg") as HTMLImageElement;
+        paused = !paused;
+        const animatedGif = document.getElementById(
+            "animatedGif",
+        ) as HTMLVideoElement;
+        const staticImg = document.getElementById(
+            "staticImg",
+        ) as HTMLImageElement;
 
-      if (paused) {
-        // Al "pausar", se oculta el GIF animado y se muestra la imagen estática.
-        animatedGif.style.display = "none";
-        staticImg.style.display = "block";
-      } else {
-        // Al "reanudar", se muestra nuevamente el GIF animado y se oculta la imagen estática.
-        animatedGif.style.display = "block";
-        staticImg.style.display = "none";
-      }
+        if (paused) {
+            // Al "pausar", se oculta el GIF animado y se muestra la imagen estática.
+            animatedGif.style.display = "none";
+            staticImg.style.display = "block";
+        } else {
+            // Al "reanudar", se muestra nuevamente el GIF animado y se oculta la imagen estática.
+            animatedGif.style.display = "block";
+            staticImg.style.display = "none";
+        }
     }
-  </script>
+</script>
